@@ -60,7 +60,7 @@ public class Worker {
 	public List<HourContract> getContracts() {
 		return contracts;
 	}
-	
+
 	public void addContract(HourContract contract) {
 		contracts.add(contract);
 	}
@@ -76,7 +76,7 @@ public class Worker {
 			cal.setTime(c.getDate());
 			int c_year = cal.get(Calendar.YEAR);
 			int c_month = 1 + cal.get(Calendar.MONTH);
-			if(year == c_year && month == c_month) {
+			if (year == c_year && month == c_month) {
 				sum += c.totalValue();
 			}
 		}
